@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# パスをクエリパラメータに変換
+RewriteRule ^([a-zA-Z0-9]+)$ /r.php?1=$1 [L,QSA]
+
+ErrorDocument 404 /404.html
